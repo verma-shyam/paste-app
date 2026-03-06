@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import toast from 'react-hot-toast';
 
-const API = "http://localhost:5000/api/paste";
+const API = "https://paste-app-4hoa.onrender.com/api/paste";
 
 
 // CREATE
