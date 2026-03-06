@@ -7,6 +7,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 import { faTrashCan } from '@fortawesome/free-regular-svg-icons'
 import { faClone } from '@fortawesome/free-regular-svg-icons'
 import { faShare } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 import toast from 'react-hot-toast';
 
 const handleShare = async (pasteId) => {
@@ -109,9 +110,11 @@ const Paste = () => {
                           active:scale-125
                           hover:bg-green-500
                           active:bg-blue-300'>
-                          <a href={`/pastes/${paste?._id}`}>
+                          
+                          <Link to={`/pastes/${paste?._id}`}>
                             <FontAwesomeIcon icon={faEye} size="lg" className="text-black" />
-                          </a>
+                          </Link>
+
                         </button>
 
                         {/* delete */}
